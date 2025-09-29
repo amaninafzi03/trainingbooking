@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function ()
                       {
                         if (result.isConfirmed)
                             {
-                            fetch("https://script.google.com/macros/s/AKfycbxpcckTiXA_DeqyI-VzETyRYo-U6dnP6eVEmZI4wvm7Clv45MZQyhoclULFdonwD7ZM/exec", {
+                            fetch("https://script.google.com/macros/s/AKfycbz3EtScdHeN20t0dc2zg2oV_g4MeuHxeJOWi3_w-Ef8e7JkvnsInKs8hXW0gokNiama/exec", {
                                 method: "POST",
                                 mode: "no-cors", 
                                 body: JSON.stringify(result.value)
@@ -105,4 +105,5 @@ document.addEventListener('DOMContentLoaded', function ()
         .catch(error => {
             console.error("Error fetching events:", error); 
         });
+
 });
