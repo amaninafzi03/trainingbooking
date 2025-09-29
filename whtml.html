@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events Calendar</title>
+  
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="wcss.css"/>
+
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() 
+      {
+        const calendarEl = document.getElementById('calendar')
+        const calendar = new FullCalendar.Calendar(calendarEl, 
+        {
+          initialView: 'dayGridMonth'
+        })
+        calendar.render()
+      })
+
+    </script>
+  
+</head>
+
+<body>
+  
+  <header>
+
+    <nav>
+    <ul>
+    <a href="#intro">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#events">Events</a>
+    <a href="#location">Locate Us</a>
+    </ul>
+    </nav>
+   
+  </header>
+
+  <main>
+
+    <section id = intro> 
+      <h1>Home</h1>
+      <p>......</p>
+    </section>
+
+    <section id = about>
+      <h2>About Us</h2>
+      <p>......</p>
+    </section>
+
+    <section id = events>
+      <h3>Events</h3>
+      <p>......</p>
+      <div id="calendar"></div>
+      <script src="wjava.js"></script>
+      <div id = "eventDetails"></div>
+    </section>
+
+    <section id = location>
+      <h4>Locate Us</h4>
+      <p>.....</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>.....</p>
+  </footer>
+
+</body>
+</html>
